@@ -1,40 +1,89 @@
 <html>
-<head>  <link rel="stylesheet" href="styles.css"> <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Varela+Round&display=swap" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="r.png" 
-<link rel="stylesheet" href="styles.css">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="r.png">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Varela Round', sans-serif;
+    }
 
-<style>
+    .navbar {
+      position: fixed;
+      background-color: #FFFFFF;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 75px; /* Set the height to half of the original */
+      width: 100%;
+      padding: 0 20px;
+      z-index: 999;
+      border-bottom: 2px solid black;
+    }
 
-body { margin: 0; padding: 0; font-family: 'Varela Round', sans-serif;}
+    .navbar-logo {
+      margin-right: 20px; /* Adjust margin for better alignment */
+    }
 
-.navbar {position: fixed; background-color: #FFFFFF; color: white; display: flex; justify-content: space-between; align-items: center; height: 150px; width: 100%;
-padding: 0 20p; z-index: 999; border-bottom: 2px solid black;}
+    .navbar-logo img {
+      width: 100px; /* Adjust the width for better quality */
+      height: auto;
+    }
 
-.navbar-logo { margin-right: 50px; }
+    .navbar-links {
+      margin-right: 20px; /* Adjust margin for better alignment */
+      text-align: right;
+    }
 
-.navbar-links { margin-right: 50px; text-align: right; }
+    .navbar-links a {
+      margin-right: 30px; /* Adjust margin for better alignment */
+      color: black;
+      text-decoration: none;
+      font-family: 'PT Serif', serif;
+      font-size: 15px; /* Adjust font size for better readability */
+    }
 
-.navbar-links a { margin-right: 60px; color: black; text-decoration: none; font-family: 'PT Serif', serif; font-size: 30px; }
+    .join-button {
+      background-color: #ffffff;
+      padding: 10px 15px; /* Adjust padding for better alignment */
+      border: none;
+      font-size: 18px; /* Adjust font size for better readability */
+      border-radius: 5px;
+      color: #000000;
+      font-family: 'PT Serif', serif;
+      text-decoration: none;
+      box-shadow: 0 0 0 3px black;
+    }
 
-.join-button { background-color: #ffffff; padding: 20px 25px; border: none; font-size: 24px; border-radius: 5px; color: #000000; font-family: 'PT Serif', serif; text-decoration: none; margin-right: 20px; box-shadow: 0 0 0 3px black; }
+    .navbar-links a:hover {
+      color: green;
+    }
 
-.navbar-links a:hover { color: green; }
-  
-.join-button:hover { background-color: black; border: 2px solid white; color: white;
+    .join-button:hover {
+      background-color: black;
+      border: 2px solid white;
+      color: white;
+    }
+  </style>
+</head>
 
-</style> </head> <body>
-<div class="navbar">
-<div class="navbar-logo">
-<a href="index.html"><img src="r.png" alt="Logo" ></a>
+<body>
+  <div class="navbar">
+    <div class="navbar-logo">
+      <a href="index.html"><img src="r.png" alt="Logo"></a>
+    </div>
+    <div class="navbar-links">
+      <a href="YO.html">YO</a>
+      <a href="YO2.html">YO2</a>
+      <a href="YO3.html">YO3</a>
+      <a href="YO4.html">YO4</a>
+    </div>
+    <a href="YOZA.html" class="join-button">YOZA</a>
+  </div>
+</body>
 
-</div>
-<div class="navbar-links">
-<a href="YO.html">YO</a>
-<a href="YO2.html">YO2</a>
-<a href="YO3.html">YO3</a>
-<a href="YO4.html">YO4</a>
-</div>
-<a href="YOZA.html" class="join-button">YOZA</a>
-</div>
+</html>
 
-</style>
