@@ -17,7 +17,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 75px; 
+      height: 75px; /* Set the height to half of the original */
       width: 100%;
       padding: 0 20px;
       z-index: 999;
@@ -29,7 +29,7 @@
     }
 
     .navbar-logo img {
-      width: 200px; /* Adjust the width for a larger logo */
+      width: 250px; /* Adjust the width for a larger logo */
       height: auto;
     }
 
@@ -68,6 +68,7 @@
       color: white;
     }
 
+    /* Media Query for smaller devices */
     @media (max-width: 768px) {
       .navbar {
         height: auto;
@@ -75,45 +76,6 @@
         align-items: flex-start;
       }
 
-      .navbar-logo {
-        margin-right: 0;
-        margin-bottom: 10px;
-      }
-
-      .navbar-links {
-        margin-right: 0;
-        text-align: left;
-      }
-
-      .navbar-links a {
-        margin-right: 0;
-        margin-bottom: 5px;
-        font-size: 18px;
-      }
-
-      .join-button {
-        margin-right: 0;
-        margin-top: 10px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <div class="navbar">
-    <div class="navbar-logo">
-      <a href="index.html"><img src="r.png" alt="Logo"></a>
-    </div>
-    <div class="navbar-links">
-      <a href="YO.html">YO</a>
-      <a href="YO2.html">YO2</a>
-      <a href="YO3.html">YO3</a>
-      <a href="YO4.html">YO4</a>
-    </div>
-    <a href="YOZA.html" class="join-button">YOZA</a>
-  </div>
-</body>
-
-</html>
+  
 
 
