@@ -1,9 +1,16 @@
+
 <html>
 <head>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Varela+Round&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="y.png">
+  <link rel="icon" type="image/x-icon" href="tg.png">
+  <link rel="stylesheet" href="path/to/fonts/kobuzan-cy-grotesk-grand-dark.otf"> 
   <style>
+    @font-face {
+      font-family: 'kobuzan-cy-grotesk-grand-dark';
+      src: url('fonts/your-custom-font.ttf') format('truetype');
+ 
+    }
+
     body {
       margin: 0;
       padding: 0;
@@ -28,9 +35,20 @@
       margin-right: 20px;
     }
 
-    .navbar-logo img {
-      width: auto; /
-      height: auto;
+    .logo-text {
+      font-family: 'YourCustomFont', sans-serif;
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+
+    .logo-text .black {
+      color: black;
+    }
+
+    .logo-text .white {
+      color: white;
+      -webkit-text-stroke: 2px black; /* Webkit for Safari/Chrome */
+      text-stroke: 2px black; /* Standard CSS for other browsers */
     }
 
     .navbar-links {
@@ -46,29 +64,7 @@
       font-size: 15px;
     }
 
-    .join-button {
-      background-color: #ffffff;
-      padding: 10px 15px;
-      border: none;
-      font-size: 18px;
-      border-radius: 5px;
-      color: #000000;
-      font-family: 'PT Serif', serif;
-      text-decoration: none;
-      box-shadow: 0 0 0 3px black;
-      margin-right: 70px; /* Adjust margin to keep it inside the frame */
-    }
-
-    .navbar-links a:hover {
-      color: green;
-    }
-
-    .join-button:hover {
-      background-color: black;
-      border: 2px solid white;
-      color: white;
-    }
-
+    /* Media Query for smaller devices */
     @media (max-width: 768px) {
       .navbar {
         height: auto;
@@ -91,12 +87,6 @@
         margin-bottom: 5px;
         font-size: 18px;
       }
-
-      .join-button {
-        margin-right: 0;
-        margin-top: 10px;
-        align-self: flex-start;
-      }
     }
   </style>
 </head>
@@ -104,7 +94,9 @@
 <body>
   <div class="navbar">
     <div class="navbar-logo">
-      <a href="index.html"><img src="r.png" alt="Logo"></a>
+      <div class="logo-text">
+        <span class="black">Orlando </span><span class="white">Webb</span>
+      </div>
     </div>
     <div class="navbar-links">
       <a href="YO.html">YO</a>
@@ -112,7 +104,6 @@
       <a href="YO3.html">YO3</a>
       <a href="YO4.html">YO4</a>
     </div>
-    <a href="YOZA.html" class="join-button">YOZA</a>
   </div>
 </body>
 
