@@ -29,7 +29,7 @@
     }
 
     .navbar-logo img {
-      width: 100px; /* Adjust the width for better quality */
+      width: 150px; /* Adjust the width for a larger logo */
       height: auto;
     }
 
@@ -67,6 +67,36 @@
       border: 2px solid white;
       color: white;
     }
+
+    /* Media Query for smaller devices */
+    @media (max-width: 768px) {
+      .navbar {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .navbar-logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      .navbar-links {
+        margin-right: 0;
+        text-align: left;
+      }
+
+      .navbar-links a {
+        margin-right: 0;
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+
+      .join-button {
+        margin-right: 0;
+        margin-top: 10px;
+      }
+    }
   </style>
 </head>
 
@@ -86,4 +116,5 @@
 </body>
 
 </html>
+
 
