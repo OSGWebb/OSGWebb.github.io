@@ -1,0 +1,32 @@
+TouchDesigner Interactive Assignment 
+
+👾 Live in the Matrix 👾
+
+Overview
+This repository contains the assignment and documentation for my TouchDesigner project,
+my project is an experience that has multiple interactive elements.
+In the background, it generates an ASCII art background based on your webcam feed.
+Then overlaying Matrix-Inspired falling text that dynamically changes as it descends. 
+Finally, it features an audio-reactive static circle in relation to my microphone. 
+
+Files
+- `assignment.toe`: TouchDesigner project file containing the assignment solution.
+- `notes.md`: Notes taken during the development process.
+- `documentation.pdf`: Comprehensive documentation covering the project's design, implementation details, and usage instructions.
+
+Installation
+1. Clone this repository to your local machine:
+    ```
+    git clone https://github.com/your_username/TouchDesigner-Assignment.git
+    ```
+2. Open `assignment.toe` in TouchDesigner.
+
+Notes
+Add any additional notes or insights about the project, such as challenges faced, interesting techniques used, or areas for future improvement.
+
+Documentation
+The `documentation.pdf` file contains detailed documentation for the project. It covers the following sections:
+- Project Overview: Brief description of the project's purpose and goals.
+- Design: Explanation of the project's design choices and considerations.
+- Implementation: Detailed breakdown of how different components were implemented.
+- Usage Instructions: Step-by-step guide on how to use the project.
